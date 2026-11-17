@@ -1,0 +1,20 @@
+# Python & OS
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Model weights & tokenizers (hosted on HuggingFace: Simonssb/qwen2.5-coder-32b-pcb-grpo)
+checkpoints/**/*.safetensors
+checkpoints/**/tokenizer.json
+checkpoints/**/training_args.bin
+
+# Large intermediate rollouts, raw corpus, & 1000-board WIP
+corpus/
+runs/frontier_benchmark/rollouts/
+runs/frontier_benchmark/responses/
+runs/frontier_benchmark/human_drc/
+runs/frontier_benchmark/ft_remaining_11_*.json
+runs/hydro_prep_*/
+*.mp4
+*1000*

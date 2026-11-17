@@ -1,0 +1,1674 @@
+{
+  "raw_examples": 918,
+  "curated_total": 624,
+  "curated_train": 559,
+  "curated_val": 65,
+  "grpo_board_prompts": 608,
+  "excluded_degenerate": 15,
+  "excluded_large_val": 0,
+  "rejected_count": 294,
+  "acceptance_rate_pct": 68.0,
+  "token_length_stats": {
+    "min": 1580,
+    "median": 4316,
+    "max": 14208
+  },
+  "reasons_breakdown": {
+    "zero_blocking": 383,
+    "suboptimal_rollout (blocking=1, reward=-82.04, ceiling=83.66)": 1,
+    "suboptimal_rollout (blocking=7, reward=-265.63, ceiling=-267.77)": 1,
+    "turn2_too_many_blocking (7)": 10,
+    "beat_human_ceiling (blocking=2, reward=-55.58 >= -59.97)": 1,
+    "turn2_diagnostic (blocking=2)": 20,
+    "failed_or_timeout": 110,
+    "suboptimal_rollout (blocking=1, reward=-85.84, ceiling=-81.17)": 1,
+    "beat_human_ceiling (blocking=1, reward=-72.76 >= -73.04)": 1,
+    "turn2_diagnostic (blocking=1)": 48,
+    "turn2_diagnostic (blocking=0)": 111,
+    "suboptimal_rollout (blocking=1, reward=-84.78, ceiling=84.75)": 1,
+    "beat_human_ceiling (blocking=2, reward=-117.77 >= -823.98)": 1,
+    "suboptimal_rollout (blocking=4, reward=-285.17, ceiling=95.21)": 1,
+    "suboptimal_rollout (blocking=8, reward=-199.53, ceiling=-204.87)": 1,
+    "turn2_too_many_blocking (8)": 3,
+    "suboptimal_rollout (blocking=1, reward=-88.15, ceiling=-86.79)": 1,
+    "suboptimal_rollout (blocking=1, reward=-73.58, ceiling=-71.71)": 1,
+    "suboptimal_rollout (blocking=1, reward=-72.58, ceiling=97.85)": 1,
+    "suboptimal_rollout (blocking=1, reward=-111.16, ceiling=47.24)": 1,
+    "beat_human_ceiling (blocking=1, reward=-107.24 >= -108.91)": 1,
+    "beat_human_ceiling (blocking=1, reward=-33.21 >= -34.17)": 1,
+    "suboptimal_rollout (blocking=1, reward=-31.28, ceiling=94.17)": 1,
+    "beat_human_ceiling (blocking=1, reward=-33.85 >= -55.05)": 1,
+    "suboptimal_rollout (blocking=5, reward=-184.52, ceiling=85.44)": 1,
+    "turn2_diagnostic (blocking=5)": 5,
+    "suboptimal_rollout (blocking=5, reward=-177.74, ceiling=-80.32)": 1,
+    "excluded_degenerate_human_ref": 15,
+    "beat_human_ceiling (blocking=1, reward=-84.11 >= -85.6)": 1,
+    "beat_human_ceiling (blocking=1, reward=-86.47 >= -87.5)": 1,
+    "suboptimal_rollout (blocking=1, reward=-84.66, ceiling=-83.59)": 1,
+    "suboptimal_rollout (blocking=1, reward=-50.08, ceiling=74.95)": 1,
+    "suboptimal_rollout (blocking=3, reward=-238.18, ceiling=71.93)": 1,
+    "beat_human_ceiling (blocking=1, reward=-102.55 >= -112.3)": 1,
+    "suboptimal_rollout (blocking=1, reward=-81.85, ceiling=88.95)": 1,
+    "suboptimal_rollout (blocking=13, reward=-353.96, ceiling=91.39)": 1,
+    "turn2_too_many_blocking (13)": 1,
+    "beat_human_ceiling (blocking=1, reward=-83.91 >= -100.46)": 1,
+    "suboptimal_rollout (blocking=3, reward=-82.08, ceiling=-82.97)": 1,
+    "turn2_diagnostic (blocking=3)": 14,
+    "beat_human_ceiling (blocking=1, reward=-99.38 >= -99.78)": 1,
+    "suboptimal_rollout (blocking=2, reward=-174.75, ceiling=64.77)": 1,
+    "suboptimal_rollout (blocking=3, reward=-230.9, ceiling=90.63)": 1,
+    "suboptimal_rollout (blocking=7, reward=-292.91, ceiling=-291.4)": 1,
+    "suboptimal_rollout (blocking=7, reward=-240.2, ceiling=-146.6)": 1,
+    "suboptimal_rollout (blocking=1, reward=-84.36, ceiling=90.0)": 1,
+    "suboptimal_rollout (blocking=1, reward=-113.26, ceiling=49.12)": 1,
+    "suboptimal_rollout (blocking=1, reward=-86.65, ceiling=88.02)": 1,
+    "suboptimal_rollout (blocking=7, reward=-283.38, ceiling=-278.64)": 1,
+    "beat_human_ceiling (blocking=2, reward=-117.83 >= -134.17)": 1,
+    "suboptimal_rollout (blocking=1, reward=-106.07, ceiling=58.18)": 1,
+    "beat_human_ceiling (blocking=1, reward=-49.87 >= -51.77)": 1,
+    "beat_human_ceiling (blocking=1, reward=-330.42 >= -405.84)": 1,
+    "beat_human_ceiling (blocking=1, reward=-99.17 >= -180.62)": 1,
+    "suboptimal_rollout (blocking=3, reward=-214.69, ceiling=-46.82)": 1,
+    "suboptimal_rollout (blocking=2, reward=-185.57, ceiling=-109.25)": 1,
+    "suboptimal_rollout (blocking=1, reward=-86.81, ceiling=61.89)": 1,
+    "beat_human_ceiling (blocking=2, reward=-134.57 >= -876.55)": 1,
+    "beat_human_ceiling (blocking=2, reward=-120.0 >= -215.05)": 1,
+    "suboptimal_rollout (blocking=3, reward=-195.49, ceiling=-275.07)": 1,
+    "beat_human_ceiling (blocking=1, reward=-92.6 >= -226.43)": 1,
+    "suboptimal_rollout (blocking=3, reward=-201.24, ceiling=-181.82)": 1,
+    "suboptimal_rollout (blocking=7, reward=-257.1, ceiling=-165.44)": 1,
+    "suboptimal_rollout (blocking=3, reward=-214.25, ceiling=-323.75)": 1,
+    "suboptimal_rollout (blocking=2, reward=-148.93, ceiling=-102.74)": 1,
+    "suboptimal_rollout (blocking=1, reward=-160.51, ceiling=-85.25)": 1,
+    "suboptimal_rollout (blocking=9, reward=-392.22, ceiling=-258.61)": 1,
+    "turn2_too_many_blocking (9)": 4,
+    "suboptimal_rollout (blocking=7, reward=-346.14, ceiling=-333.64)": 1,
+    "suboptimal_rollout (blocking=5, reward=-277.8, ceiling=-64.11)": 1,
+    "suboptimal_rollout (blocking=2, reward=-122.82, ceiling=-58.19)": 1,
+    "suboptimal_rollout (blocking=1, reward=-264.33, ceiling=-48.13)": 1,
+    "beat_human_ceiling (blocking=1, reward=-135.91 >= -364.53)": 1,
+    "suboptimal_rollout (blocking=1, reward=-89.71, ceiling=51.61)": 1,
+    "suboptimal_rollout (blocking=4, reward=-190.61, ceiling=-148.11)": 1,
+    "turn2_diagnostic (blocking=4)": 8,
+    "suboptimal_rollout (blocking=3, reward=-137.43, ceiling=-96.8)": 1,
+    "suboptimal_rollout (blocking=1, reward=-211.21, ceiling=-125.22)": 1,
+    "suboptimal_rollout (blocking=3, reward=-126.97, ceiling=79.68)": 1,
+    "suboptimal_rollout (blocking=1, reward=-175.33, ceiling=52.48)": 1,
+    "suboptimal_rollout (blocking=2, reward=-225.55, ceiling=-3.44)": 1,
+    "suboptimal_rollout (blocking=9, reward=-375.6, ceiling=-449.41)": 1,
+    "suboptimal_rollout (blocking=1, reward=-170.34, ceiling=46.15)": 1,
+    "beat_human_ceiling (blocking=1, reward=-154.64 >= -259.4)": 1,
+    "beat_human_ceiling (blocking=1, reward=-126.4 >= -194.82)": 1,
+    "suboptimal_rollout (blocking=10, reward=-341.47, ceiling=-170.02)": 1,
+    "turn2_too_many_blocking (10)": 3,
+    "suboptimal_rollout (blocking=11, reward=-364.27, ceiling=-99.56)": 1,
+    "turn2_too_many_blocking (11)": 1,
+    "suboptimal_rollout (blocking=9, reward=-350.54, ceiling=-284.06)": 1,
+    "suboptimal_rollout (blocking=1, reward=-205.95, ceiling=-128.12)": 1,
+    "suboptimal_rollout (blocking=3, reward=-170.89, ceiling=-663.63)": 1,
+    "suboptimal_rollout (blocking=2, reward=-129.44, ceiling=-39.56)": 1,
+    "suboptimal_rollout (blocking=6, reward=-262.63, ceiling=-372.15)": 1,
+    "turn2_too_many_blocking (6)": 2,
+    "suboptimal_rollout (blocking=None, reward=-320.0, ceiling=-500.0)": 13,
+    "beat_human_ceiling (blocking=1, reward=-115.27 >= -501.21)": 1,
+    "suboptimal_rollout (blocking=1, reward=-80.14, ceiling=91.33)": 1,
+    "suboptimal_rollout (blocking=2, reward=-116.91, ceiling=-114.22)": 1,
+    "suboptimal_rollout (blocking=3, reward=-156.12, ceiling=-67.31)": 1,
+    "suboptimal_rollout (blocking=1, reward=-77.6, ceiling=-36.01)": 1,
+    "suboptimal_rollout (blocking=1, reward=-107.52, ceiling=-29.38)": 1,
+    "suboptimal_rollout (blocking=1, reward=-144.29, ceiling=23.55)": 1,
+    "suboptimal_rollout (blocking=8, reward=-380.71, ceiling=-99.95)": 1,
+    "suboptimal_rollout (blocking=9, reward=-308.79, ceiling=-275.77)": 1,
+    "suboptimal_rollout (blocking=1, reward=-140.29, ceiling=-121.28)": 1,
+    "suboptimal_rollout (blocking=1, reward=-132.47, ceiling=-65.63)": 1,
+    "suboptimal_rollout (blocking=1, reward=-116.81, ceiling=-40.54)": 1,
+    "beat_human_ceiling (blocking=1, reward=-66.65 >= -91.01)": 1,
+    "suboptimal_rollout (blocking=1, reward=-88.96, ceiling=-83.47)": 1,
+    "suboptimal_rollout (blocking=1, reward=-68.01, ceiling=-45.0)": 1,
+    "suboptimal_rollout (blocking=2, reward=-78.1, ceiling=-72.12)": 1,
+    "suboptimal_rollout (blocking=1, reward=-101.95, ceiling=-68.55)": 1,
+    "beat_human_ceiling (blocking=1, reward=-107.99 >= -138.89)": 1,
+    "beat_human_ceiling (blocking=1, reward=-133.36 >= -164.31)": 1,
+    "suboptimal_rollout (blocking=4, reward=-298.12, ceiling=86.76)": 1,
+    "suboptimal_rollout (blocking=4, reward=-211.78, ceiling=-220.88)": 1,
+    "suboptimal_rollout (blocking=1, reward=-90.85, ceiling=86.21)": 1,
+    "suboptimal_rollout (blocking=4, reward=-250.76, ceiling=-200.38)": 1,
+    "beat_human_ceiling (blocking=1, reward=-296.77 >= -500.0)": 1,
+    "suboptimal_rollout (blocking=2, reward=-154.82, ceiling=-99.34)": 1,
+    "suboptimal_rollout (blocking=1, reward=-66.18, ceiling=-42.75)": 1,
+    "suboptimal_rollout (blocking=None, reward=-320.0, ceiling=52.09)": 1,
+    "suboptimal_rollout (blocking=4, reward=-203.19, ceiling=-109.8)": 1,
+    "beat_human_ceiling (blocking=2, reward=-156.51 >= -500.0)": 1,
+    "suboptimal_rollout (blocking=1, reward=-63.56, ceiling=66.78)": 1,
+    "beat_human_ceiling (blocking=1, reward=-88.34 >= -743.01)": 1,
+    "suboptimal_rollout (blocking=2, reward=-106.62, ceiling=-101.01)": 1,
+    "suboptimal_rollout (blocking=1, reward=-83.94, ceiling=-78.29)": 1,
+    "suboptimal_rollout (blocking=3, reward=-172.92, ceiling=-43.74)": 1,
+    "suboptimal_rollout (blocking=6, reward=-244.24, ceiling=-238.92)": 1,
+    "suboptimal_rollout (blocking=2, reward=-108.54, ceiling=None)": 1,
+    "suboptimal_rollout (blocking=1, reward=-118.74, ceiling=-39.57)": 1,
+    "suboptimal_rollout (blocking=5, reward=-235.76, ceiling=-111.28)": 1,
+    "suboptimal_rollout (blocking=1, reward=-97.23, ceiling=-94.2)": 1,
+    "suboptimal_rollout (blocking=1, reward=-109.68, ceiling=-50.32)": 1,
+    "suboptimal_rollout (blocking=3, reward=-199.12, ceiling=-38.49)": 1,
+    "suboptimal_rollout (blocking=2, reward=-145.79, ceiling=-95.67)": 1,
+    "suboptimal_rollout (blocking=7, reward=-396.04, ceiling=-354.18)": 1,
+    "beat_human_ceiling (blocking=2, reward=-148.78 >= -232.18)": 1,
+    "suboptimal_rollout (blocking=4, reward=-239.25, ceiling=-500.0)": 1,
+    "suboptimal_rollout (blocking=7, reward=-294.04, ceiling=-461.09)": 1,
+    "suboptimal_rollout (blocking=10, reward=-325.9, ceiling=-500.0)": 1,
+    "suboptimal_rollout (blocking=None, reward=-320.0, ceiling=-370.77)": 1,
+    "suboptimal_rollout (blocking=1, reward=-181.44, ceiling=-111.1)": 1,
+    "suboptimal_rollout (blocking=1, reward=-90.34, ceiling=-82.67)": 1,
+    "suboptimal_rollout (blocking=1, reward=-106.85, ceiling=-88.22)": 1,
+    "suboptimal_rollout (blocking=1, reward=-79.58, ceiling=92.95)": 1,
+    "beat_human_ceiling (blocking=2, reward=-163.22 >= -167.9)": 1,
+    "suboptimal_rollout (blocking=8, reward=-301.23, ceiling=-51.73)": 1,
+    "suboptimal_rollout (blocking=None, reward=-320.0, ceiling=-96.72)": 1,
+    "suboptimal_rollout (blocking=1, reward=-308.36, ceiling=-100.04)": 1,
+    "suboptimal_rollout (blocking=10, reward=-388.26, ceiling=-108.2)": 1,
+    "suboptimal_rollout (blocking=3, reward=-144.37, ceiling=-152.66)": 1,
+    "suboptimal_rollout (blocking=4, reward=-175.63, ceiling=-118.78)": 1,
+    "suboptimal_rollout (blocking=3, reward=-153.35, ceiling=-285.0)": 1,
+    "beat_human_ceiling (blocking=2, reward=-157.42 >= -158.88)": 1,
+    "beat_human_ceiling (blocking=1, reward=-52.43 >= -1236.66)": 1,
+    "suboptimal_rollout (blocking=4, reward=-247.12, ceiling=-113.86)": 1,
+    "suboptimal_rollout (blocking=1, reward=-159.2, ceiling=80.34)": 1,
+    "suboptimal_rollout (blocking=1, reward=-112.37, ceiling=-73.83)": 1,
+    "suboptimal_rollout (blocking=2, reward=-102.58, ceiling=83.5)": 1,
+    "suboptimal_rollout (blocking=5, reward=-208.47, ceiling=-229.91)": 1,
+    "suboptimal_rollout (blocking=1, reward=-139.47, ceiling=-113.52)": 1,
+    "suboptimal_rollout (blocking=12, reward=-367.33, ceiling=-307.7)": 1,
+    "turn2_too_many_blocking (12)": 1,
+    "suboptimal_rollout (blocking=2, reward=-171.75, ceiling=-90.52)": 1,
+    "suboptimal_rollout (blocking=None, reward=-320.0, ceiling=59.26)": 1,
+    "suboptimal_rollout (blocking=1, reward=-174.85, ceiling=-90.31)": 1,
+    "suboptimal_rollout (blocking=2, reward=-298.67, ceiling=63.86)": 1,
+    "beat_human_ceiling (blocking=1, reward=-75.64 >= -172.21)": 1,
+    "beat_human_ceiling (blocking=1, reward=-73.46 >= -112.06)": 1,
+    "suboptimal_rollout (blocking=3, reward=-201.03, ceiling=-42.4)": 1,
+    "suboptimal_rollout (blocking=2, reward=-137.78, ceiling=-43.11)": 1,
+    "suboptimal_rollout (blocking=7, reward=-264.75, ceiling=-230.15)": 1,
+    "suboptimal_rollout (blocking=7, reward=-287.53, ceiling=-168.18)": 1,
+    "suboptimal_rollout (blocking=1, reward=-100.11, ceiling=-35.76)": 1,
+    "suboptimal_rollout (blocking=2, reward=-157.1, ceiling=82.97)": 1,
+    "suboptimal_rollout (blocking=1, reward=-92.8, ceiling=-78.08)": 1,
+    "beat_human_ceiling (blocking=1, reward=-42.75 >= -134.34)": 1,
+    "suboptimal_rollout (blocking=None, reward=-320.0, ceiling=-175.09)": 1,
+    "suboptimal_rollout (blocking=1, reward=-147.58, ceiling=-94.74)": 1,
+    "suboptimal_rollout (blocking=1, reward=-151.42, ceiling=-108.37)": 1,
+    "suboptimal_rollout (blocking=1, reward=-85.99, ceiling=80.65)": 1
+  },
+  "rejected_boards": [
+    {
+      "board": "picoprobe_tester",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-82.04, ceiling=83.66)"
+    },
+    {
+      "board": "openmux_potentio",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=7, reward=-265.63, ceiling=-267.77)"
+    },
+    {
+      "board": "openmux_potentio",
+      "turn": 2,
+      "reason": "turn2_too_many_blocking (7)"
+    },
+    {
+      "board": "a500_2meg_chip_ram",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "a500_2meg_chip_ram",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "usbgpib",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-85.84, ceiling=-81.17)"
+    },
+    {
+      "board": "rp2040_numpad",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-84.78, ceiling=84.75)"
+    },
+    {
+      "board": "quad_rs485_pico",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=4, reward=-285.17, ceiling=95.21)"
+    },
+    {
+      "board": "spimux",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=8, reward=-199.53, ceiling=-204.87)"
+    },
+    {
+      "board": "spimux",
+      "turn": 2,
+      "reason": "turn2_too_many_blocking (8)"
+    },
+    {
+      "board": "dog_harness_panel",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-88.15, ceiling=-86.79)"
+    },
+    {
+      "board": "cryologger_aws",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "cryologger_aws",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "lna3030",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-73.58, ceiling=-71.71)"
+    },
+    {
+      "board": "zigbee_sensor",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-72.58, ceiling=97.85)"
+    },
+    {
+      "board": "a7s_backplane",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-111.16, ceiling=47.24)"
+    },
+    {
+      "board": "universal_badge_led",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "universal_badge_led",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "free_dap",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-31.28, ceiling=94.17)"
+    },
+    {
+      "board": "pistormx_1k2",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "myra_sip_interposer",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "myra_sip_interposer",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "kiku_mesh",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=5, reward=-184.52, ceiling=85.44)"
+    },
+    {
+      "board": "olimex_lora",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=5, reward=-177.74, ceiling=-80.32)"
+    },
+    {
+      "board": "picodvi",
+      "turn": 1,
+      "reason": "excluded_degenerate_human_ref"
+    },
+    {
+      "board": "picodvi",
+      "turn": 2,
+      "reason": "excluded_degenerate_human_ref"
+    },
+    {
+      "board": "myfocuserpro",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-84.66, ceiling=-83.59)"
+    },
+    {
+      "board": "triad_actuator",
+      "turn": 1,
+      "reason": "excluded_degenerate_human_ref"
+    },
+    {
+      "board": "mbira_esp_midi",
+      "turn": 1,
+      "reason": "excluded_degenerate_human_ref"
+    },
+    {
+      "board": "rp2350_dev",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-50.08, ceiling=74.95)"
+    },
+    {
+      "board": "divtiesus_zx",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "divtiesus_zx",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "openjoint",
+      "turn": 1,
+      "reason": "excluded_degenerate_human_ref"
+    },
+    {
+      "board": "openjoint",
+      "turn": 2,
+      "reason": "excluded_degenerate_human_ref"
+    },
+    {
+      "board": "bms_sensor",
+      "turn": 1,
+      "reason": "excluded_degenerate_human_ref"
+    },
+    {
+      "board": "laser_backplane_dvi",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "laser_backplane_dvi",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "upsy_desky",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=3, reward=-238.18, ceiling=71.93)"
+    },
+    {
+      "board": "meshtastic_solar",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-81.85, ceiling=88.95)"
+    },
+    {
+      "board": "g473_gen1",
+      "turn": 1,
+      "reason": "excluded_degenerate_human_ref"
+    },
+    {
+      "board": "g473_gen1",
+      "turn": 2,
+      "reason": "excluded_degenerate_human_ref"
+    },
+    {
+      "board": "espresso_hv",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=13, reward=-353.96, ceiling=91.39)"
+    },
+    {
+      "board": "espresso_hv",
+      "turn": 2,
+      "reason": "turn2_too_many_blocking (13)"
+    },
+    {
+      "board": "usp_obc_v7",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "usp_obc_v7",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "vfo_ctrl",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=3, reward=-82.08, ceiling=-82.97)"
+    },
+    {
+      "board": "cherrycam",
+      "turn": 1,
+      "reason": "excluded_degenerate_human_ref"
+    },
+    {
+      "board": "vigor_frontpanel",
+      "turn": 1,
+      "reason": "excluded_degenerate_human_ref"
+    },
+    {
+      "board": "wisweep_driver",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "wisweep_driver",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "overlord_cm5",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=2, reward=-174.75, ceiling=64.77)"
+    },
+    {
+      "board": "ir_irradiance_probe",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=3, reward=-230.9, ceiling=90.63)"
+    },
+    {
+      "board": "sx1262_re_433",
+      "turn": 1,
+      "reason": "excluded_degenerate_human_ref"
+    },
+    {
+      "board": "bad_thing_kbd",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "bad_thing_kbd",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "rp2350_fpga_eensy",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=7, reward=-292.91, ceiling=-291.4)"
+    },
+    {
+      "board": "rp2350_fpga_eensy",
+      "turn": 2,
+      "reason": "turn2_too_many_blocking (7)"
+    },
+    {
+      "board": "twonkie",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=7, reward=-240.2, ceiling=-146.6)"
+    },
+    {
+      "board": "twonkie",
+      "turn": 2,
+      "reason": "turn2_too_many_blocking (7)"
+    },
+    {
+      "board": "eit_mux",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "eit_mux",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "act_probe_2ghz",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-84.36, ceiling=90.0)"
+    },
+    {
+      "board": "splitflap_driver",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-113.26, ceiling=49.12)"
+    },
+    {
+      "board": "ddr5_testbed",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "ddr5_testbed",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "len42_fx",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "len42_fx",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "helium_mult",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-86.65, ceiling=88.02)"
+    },
+    {
+      "board": "mikoto_nrf52840",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=7, reward=-283.38, ceiling=-278.64)"
+    },
+    {
+      "board": "mikoto_nrf52840",
+      "turn": 2,
+      "reason": "turn2_too_many_blocking (7)"
+    },
+    {
+      "board": "chart_plotter_hat",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-106.07, ceiling=58.18)"
+    },
+    {
+      "board": "qmtech_k7",
+      "turn": 1,
+      "reason": "excluded_degenerate_human_ref"
+    },
+    {
+      "board": "opengammakit",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "opengammakit",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "len42_filter2",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "len42_filter2",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "nebula_watch",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=3, reward=-214.69, ceiling=-46.82)"
+    },
+    {
+      "board": "ov9281_dual_cam",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "lora_v3",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=2, reward=-185.57, ceiling=-109.25)"
+    },
+    {
+      "board": "esp32_iot_sd",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-86.81, ceiling=61.89)"
+    },
+    {
+      "board": "usbc_liion_charger",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "usb_sniffer",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "usb_sniffer",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "healthypi_move",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "healthypi_move",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "hex_gateway",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=3, reward=-195.49, ceiling=-275.07)"
+    },
+    {
+      "board": "hifi_dsp_board",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "bldc_tester",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "limeskey_mesh",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=3, reward=-201.24, ceiling=-181.82)"
+    },
+    {
+      "board": "rio_iceshield",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "rio_iceshield",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "icev_wireless",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=7, reward=-257.1, ceiling=-165.44)"
+    },
+    {
+      "board": "icev_wireless",
+      "turn": 2,
+      "reason": "turn2_too_many_blocking (7)"
+    },
+    {
+      "board": "pmod_i3c_sensor",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=3, reward=-214.25, ceiling=-323.75)"
+    },
+    {
+      "board": "kishoof_components",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=2, reward=-148.93, ceiling=-102.74)"
+    },
+    {
+      "board": "cm5_minima1",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-160.51, ceiling=-85.25)"
+    },
+    {
+      "board": "ethercat_8in8out",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=9, reward=-392.22, ceiling=-258.61)"
+    },
+    {
+      "board": "ethercat_8in8out",
+      "turn": 2,
+      "reason": "turn2_too_many_blocking (9)"
+    },
+    {
+      "board": "jetson_agx_csi_adapter",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=7, reward=-346.14, ceiling=-333.64)"
+    },
+    {
+      "board": "jetson_agx_csi_adapter",
+      "turn": 2,
+      "reason": "turn2_too_many_blocking (7)"
+    },
+    {
+      "board": "bancouver40",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=5, reward=-277.8, ceiling=-64.11)"
+    },
+    {
+      "board": "openinverter_mini",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "environment_sensor",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=2, reward=-122.82, ceiling=-58.19)"
+    },
+    {
+      "board": "z80_atmega128",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-264.33, ceiling=-48.13)"
+    },
+    {
+      "board": "open_weather_station",
+      "turn": 1,
+      "reason": "excluded_degenerate_human_ref"
+    },
+    {
+      "board": "open_weather_station",
+      "turn": 2,
+      "reason": "excluded_degenerate_human_ref"
+    },
+    {
+      "board": "ember_he",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-89.71, ceiling=51.61)"
+    },
+    {
+      "board": "stm32g474_fc",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=4, reward=-190.61, ceiling=-148.11)"
+    },
+    {
+      "board": "stm32h7s3_som",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "upduino",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "upduino",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "cvbs_mipi_bridge",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=3, reward=-137.43, ceiling=-96.8)"
+    },
+    {
+      "board": "microzed_carrier",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-211.21, ceiling=-125.22)"
+    },
+    {
+      "board": "odmr_adf_board",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=3, reward=-126.97, ceiling=79.68)"
+    },
+    {
+      "board": "granit_cm5",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "epdiy_v7",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "hdmi_mipi_bridge",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "eis",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "eis",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "duodyne_backplane20",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "usbc_power_adapter",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "healthypi_sensor",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "healthypi_sensor",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "starlighteye_cam",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "starlighteye_cam",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "epr_bridge_ctrl",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-175.33, ceiling=52.48)"
+    },
+    {
+      "board": "cb_static",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=2, reward=-225.55, ceiling=-3.44)"
+    },
+    {
+      "board": "gmsl_serializer",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "tinytapeout_qfn",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "dawson_trigger",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "bitaxe_ultra",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "lora_ice40_dongle",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "lora_ice40_dongle",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "tesla_coil_sensor",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "gem_baseboard",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=9, reward=-375.6, ceiling=-449.41)"
+    },
+    {
+      "board": "gem_baseboard",
+      "turn": 2,
+      "reason": "turn2_too_many_blocking (9)"
+    },
+    {
+      "board": "cm4_lvds",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "orbiter_kb",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "orbiter_kb",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "robotics_psu",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-170.34, ceiling=46.15)"
+    },
+    {
+      "board": "imx6ulz_4l",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "imx6ulz_4l",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "music32_v3",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "icebreaker_v10e",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=10, reward=-341.47, ceiling=-170.02)"
+    },
+    {
+      "board": "icebreaker_v10e",
+      "turn": 2,
+      "reason": "turn2_too_many_blocking (10)"
+    },
+    {
+      "board": "uncutgem_nv",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=11, reward=-364.27, ceiling=-99.56)"
+    },
+    {
+      "board": "uncutgem_nv",
+      "turn": 2,
+      "reason": "turn2_too_many_blocking (11)"
+    },
+    {
+      "board": "m2_iot",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "agri_smart_switch",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "agri_smart_switch",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "sband_transceiver",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=9, reward=-350.54, ceiling=-284.06)"
+    },
+    {
+      "board": "sband_transceiver",
+      "turn": 2,
+      "reason": "turn2_too_many_blocking (9)"
+    },
+    {
+      "board": "qfhmix01",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "qfhmix01",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "fsae_custom_bms",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-205.95, ceiling=-128.12)"
+    },
+    {
+      "board": "job_ict_bottom",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "anyshake_explorer",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "anyshake_explorer",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "fc980c_controller",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=3, reward=-170.89, ceiling=-663.63)"
+    },
+    {
+      "board": "dolphindos3_kicad",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "dolphindos3_kicad",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "rp_micro",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "rp_micro",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "speak_to_me",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=2, reward=-129.44, ceiling=-39.56)"
+    },
+    {
+      "board": "tuxkeychain",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=6, reward=-262.63, ceiling=-372.15)"
+    },
+    {
+      "board": "tuxkeychain",
+      "turn": 2,
+      "reason": "turn2_too_many_blocking (6)"
+    },
+    {
+      "board": "drone",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=None, reward=-320.0, ceiling=-500.0)"
+    },
+    {
+      "board": "pico_w_dual_serial",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-80.14, ceiling=91.33)"
+    },
+    {
+      "board": "agb_hifi_audio_pcb",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=2, reward=-116.91, ceiling=-114.22)"
+    },
+    {
+      "board": "m2_pcie_adapter",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=3, reward=-156.12, ceiling=-67.31)"
+    },
+    {
+      "board": "room_monitor_c6",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=None, reward=-320.0, ceiling=-500.0)"
+    },
+    {
+      "board": "esp32_led_controller_v2",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-77.6, ceiling=-36.01)"
+    },
+    {
+      "board": "dataprocessingunit",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-107.52, ceiling=-29.38)"
+    },
+    {
+      "board": "sensorhub",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "sensorhub",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "mitayi_pico_d1",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "mitayi_pico_d1",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "picoface_16v8",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-144.29, ceiling=23.55)"
+    },
+    {
+      "board": "reflow_toaster_mainboard",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=8, reward=-380.71, ceiling=-99.95)"
+    },
+    {
+      "board": "reflow_toaster_mainboard",
+      "turn": 2,
+      "reason": "turn2_too_many_blocking (8)"
+    },
+    {
+      "board": "yardstickone",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "yardstickone",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "bt_audio_rec",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=9, reward=-308.79, ceiling=-275.77)"
+    },
+    {
+      "board": "bt_audio_rec",
+      "turn": 2,
+      "reason": "turn2_too_many_blocking (9)"
+    },
+    {
+      "board": "esp32_c3_zigbee_temp",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-140.29, ceiling=-121.28)"
+    },
+    {
+      "board": "stm32_lqfp64_test_board",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-132.47, ceiling=-65.63)"
+    },
+    {
+      "board": "rp2040",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-116.81, ceiling=-40.54)"
+    },
+    {
+      "board": "picowan",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "picowan",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "cansat2023",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-88.96, ceiling=-83.47)"
+    },
+    {
+      "board": "custom_carrier",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-68.01, ceiling=-45.0)"
+    },
+    {
+      "board": "esp32_c6_temp_sensor",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=2, reward=-78.1, ceiling=-72.12)"
+    },
+    {
+      "board": "stm32f4example",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-101.95, ceiling=-68.55)"
+    },
+    {
+      "board": "machxo2_test",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "machxo2_test",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "esp32mikrobus",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=4, reward=-298.12, ceiling=86.76)"
+    },
+    {
+      "board": "my_rp2040",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=4, reward=-211.78, ceiling=-220.88)"
+    },
+    {
+      "board": "af_af",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-90.85, ceiling=86.21)"
+    },
+    {
+      "board": "hsrgb",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=4, reward=-250.76, ceiling=-200.38)"
+    },
+    {
+      "board": "stm32h750vbt6_minimalistic_design",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=2, reward=-154.82, ceiling=-99.34)"
+    },
+    {
+      "board": "cansult",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-66.18, ceiling=-42.75)"
+    },
+    {
+      "board": "mppb01",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=None, reward=-320.0, ceiling=52.09)"
+    },
+    {
+      "board": "stm32tq6401",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=None, reward=-320.0, ceiling=-500.0)"
+    },
+    {
+      "board": "mkrzero_v5_0",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=4, reward=-203.19, ceiling=-109.8)"
+    },
+    {
+      "board": "esp32_devkit_typec",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "esp32_devkit_typec",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "lpc55_carrier",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-63.56, ceiling=66.78)"
+    },
+    {
+      "board": "usb_gigabit_rev_d",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "usb_gigabit_rev_d",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "homelightswith1206",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=2, reward=-106.62, ceiling=-101.01)"
+    },
+    {
+      "board": "esp32_c3_mini",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-83.94, ceiling=-78.29)"
+    },
+    {
+      "board": "uinio_mcu_esp32s3",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=None, reward=-320.0, ceiling=-500.0)"
+    },
+    {
+      "board": "bizcard",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=3, reward=-172.92, ceiling=-43.74)"
+    },
+    {
+      "board": "thermo_v2_266",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=6, reward=-244.24, ceiling=-238.92)"
+    },
+    {
+      "board": "thermo_v2_266",
+      "turn": 2,
+      "reason": "turn2_too_many_blocking (6)"
+    },
+    {
+      "board": "ipd_kicad",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=2, reward=-108.54, ceiling=None)"
+    },
+    {
+      "board": "stm32crapsynth",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=None, reward=-320.0, ceiling=-500.0)"
+    },
+    {
+      "board": "amalthea",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "amalthea",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "bt_nes_advantage_pcb",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-118.74, ceiling=-39.57)"
+    },
+    {
+      "board": "esp32_c3",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=5, reward=-235.76, ceiling=-111.28)"
+    },
+    {
+      "board": "esp32s3_plantmonitor",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-97.23, ceiling=-94.2)"
+    },
+    {
+      "board": "mppt_2024",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=None, reward=-320.0, ceiling=-500.0)"
+    },
+    {
+      "board": "blackpill_tft",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-109.68, ceiling=-50.32)"
+    },
+    {
+      "board": "lsw5_esp32",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=3, reward=-199.12, ceiling=-38.49)"
+    },
+    {
+      "board": "amogusrp2040",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=2, reward=-145.79, ceiling=-95.67)"
+    },
+    {
+      "board": "shunko_shield",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "shunko_shield",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "envopenpico2350",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=7, reward=-396.04, ceiling=-354.18)"
+    },
+    {
+      "board": "envopenpico2350",
+      "turn": 2,
+      "reason": "turn2_too_many_blocking (7)"
+    },
+    {
+      "board": "tinyriser",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=4, reward=-239.25, ceiling=-500.0)"
+    },
+    {
+      "board": "hypersonic_pcb",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=7, reward=-294.04, ceiling=-461.09)"
+    },
+    {
+      "board": "hypersonic_pcb",
+      "turn": 2,
+      "reason": "turn2_too_many_blocking (7)"
+    },
+    {
+      "board": "hexapod_pcb_kicad_project",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=10, reward=-325.9, ceiling=-500.0)"
+    },
+    {
+      "board": "hexapod_pcb_kicad_project",
+      "turn": 2,
+      "reason": "turn2_too_many_blocking (10)"
+    },
+    {
+      "board": "zx_sdc",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=None, reward=-320.0, ceiling=-370.77)"
+    },
+    {
+      "board": "main_pcb",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-181.44, ceiling=-111.1)"
+    },
+    {
+      "board": "r1_4_maxduino_kicad_files",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-90.34, ceiling=-82.67)"
+    },
+    {
+      "board": "esp8266_sentinel_kinetic_wired_remote",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-106.85, ceiling=-88.22)"
+    },
+    {
+      "board": "sahel_battery",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-79.58, ceiling=92.95)"
+    },
+    {
+      "board": "nx_module_breakout",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "nx_module_breakout",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "andreasdahlberg_main_pcb",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=None, reward=-320.0, ceiling=-500.0)"
+    },
+    {
+      "board": "lcddriver",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=8, reward=-301.23, ceiling=-51.73)"
+    },
+    {
+      "board": "lcddriver",
+      "turn": 2,
+      "reason": "turn2_too_many_blocking (8)"
+    },
+    {
+      "board": "pandora_mcu_cc1352p7",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=None, reward=-320.0, ceiling=-96.72)"
+    },
+    {
+      "board": "bledeck",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-308.36, ceiling=-100.04)"
+    },
+    {
+      "board": "weirdgyn_driverino",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=10, reward=-388.26, ceiling=-108.2)"
+    },
+    {
+      "board": "weirdgyn_driverino",
+      "turn": 2,
+      "reason": "turn2_too_many_blocking (10)"
+    },
+    {
+      "board": "fc_rev2",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=3, reward=-144.37, ceiling=-152.66)"
+    },
+    {
+      "board": "kb_starter",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=4, reward=-175.63, ceiling=-118.78)"
+    },
+    {
+      "board": "sensor_board",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=3, reward=-153.35, ceiling=-285.0)"
+    },
+    {
+      "board": "esp32_clover",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=None, reward=-320.0, ceiling=-500.0)"
+    },
+    {
+      "board": "ak4458vn_breakout",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=4, reward=-247.12, ceiling=-113.86)"
+    },
+    {
+      "board": "esp32_c5_devkit_lipo_rev_a",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "esp32_c5_devkit_lipo_rev_a",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "huntercat_nfc",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-159.2, ceiling=80.34)"
+    },
+    {
+      "board": "pando_left",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "zigbee_air_sensor",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-112.37, ceiling=-73.83)"
+    },
+    {
+      "board": "eurobusboard",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=2, reward=-102.58, ceiling=83.5)"
+    },
+    {
+      "board": "i2c24io",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=5, reward=-208.47, ceiling=-229.91)"
+    },
+    {
+      "board": "backplane",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-139.47, ceiling=-113.52)"
+    },
+    {
+      "board": "keezyboost40",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=12, reward=-367.33, ceiling=-307.7)"
+    },
+    {
+      "board": "keezyboost40",
+      "turn": 2,
+      "reason": "turn2_too_many_blocking (12)"
+    },
+    {
+      "board": "air_quality_sensor",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=2, reward=-171.75, ceiling=-90.52)"
+    },
+    {
+      "board": "batgizmo_logger",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=None, reward=-320.0, ceiling=59.26)"
+    },
+    {
+      "board": "bastwan_wle",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-174.85, ceiling=-90.31)"
+    },
+    {
+      "board": "canbob_mage_canbob_003",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=2, reward=-298.67, ceiling=63.86)"
+    },
+    {
+      "board": "rp2040_dev_board",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=3, reward=-201.03, ceiling=-42.4)"
+    },
+    {
+      "board": "smartplug",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=2, reward=-137.78, ceiling=-43.11)"
+    },
+    {
+      "board": "rocket_flight_computer",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=7, reward=-264.75, ceiling=-230.15)"
+    },
+    {
+      "board": "rocket_flight_computer",
+      "turn": 2,
+      "reason": "turn2_too_many_blocking (7)"
+    },
+    {
+      "board": "the_guesser",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=None, reward=-320.0, ceiling=-500.0)"
+    },
+    {
+      "board": "bigboy",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=None, reward=-320.0, ceiling=-500.0)"
+    },
+    {
+      "board": "sensor_hub",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=7, reward=-287.53, ceiling=-168.18)"
+    },
+    {
+      "board": "sensor_hub",
+      "turn": 2,
+      "reason": "turn2_too_many_blocking (7)"
+    },
+    {
+      "board": "ag_business_card",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-100.11, ceiling=-35.76)"
+    },
+    {
+      "board": "tiliqua_motherboard",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=None, reward=-320.0, ceiling=-500.0)"
+    },
+    {
+      "board": "mixer_spdif_v1_0",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "mixer_spdif_v1_0",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "datalogger02",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=None, reward=-320.0, ceiling=-500.0)"
+    },
+    {
+      "board": "pcb_kicad_f446",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "pcb_kicad_f446",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "a1_lan",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "a1_lan",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "cube_ioboard",
+      "turn": 1,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "cube_ioboard",
+      "turn": 2,
+      "reason": "failed_or_timeout"
+    },
+    {
+      "board": "slantpad",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=2, reward=-157.1, ceiling=82.97)"
+    },
+    {
+      "board": "swrbridge",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-92.8, ceiling=-78.08)"
+    },
+    {
+      "board": "logical",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=None, reward=-320.0, ceiling=-175.09)"
+    },
+    {
+      "board": "rp2040term_pcb_version",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-147.58, ceiling=-94.74)"
+    },
+    {
+      "board": "caveboard",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=None, reward=-320.0, ceiling=-500.0)"
+    },
+    {
+      "board": "klock_pcb",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-151.42, ceiling=-108.37)"
+    },
+    {
+      "board": "mycorne_left",
+      "turn": 1,
+      "reason": "suboptimal_rollout (blocking=1, reward=-85.99, ceiling=80.65)"
+    }
+  ]
+}
